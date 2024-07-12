@@ -161,10 +161,9 @@ nav{
         #work{
             margin-top: 1rem;
         }
-    }
-
-    #toTop{
-        display: block;
+        #toTop{
+            display: block;
+        }
     }
 }
 
