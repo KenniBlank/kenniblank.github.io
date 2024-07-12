@@ -130,6 +130,15 @@ nav{
         width: 90%; 
         margin: 10px auto;
     }
+    .card{
+        color: white;
+        background-color: black;
+    }
+    
+    .smallScreen img, .card{
+        border: 1px solid #ffa31a;
+        border-radius: 10px;
+    }
     @media only screen and (max-width: 410px)
     {
         .smallScreen .card{
@@ -157,16 +166,6 @@ nav{
 
 .gameImageSize{
     height: 92vh;
-}
-
-.card{
-    color: white;
-    background-color: black;
-}
-
-.smallScreen img, .card{
-    border: 1px solid #ffa31a;
-    border-radius: 10px;
 }
 
 .portFolio, .portFolio a{
