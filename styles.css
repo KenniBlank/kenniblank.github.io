@@ -76,7 +76,7 @@ nav{
 
 .feature-box a:hover {
     text-decoration: none;
-    color: rgb(255, 20, 20);
+    color: orange;
     padding: 5px;
     display: inline-block;
     background-color: transparent;
@@ -190,4 +190,17 @@ nav{
 .portFolio, .portFolio a{
     color: white;
     text-decoration: none;
+}
+
+.portFolio a:hover {
+    color: orange;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.carousel{
+    max-width: 1366px;
+    margin: auto;
 }
