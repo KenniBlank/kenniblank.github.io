@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+#toTop{
+    display: none;
+}
+
 body{
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
@@ -139,6 +143,12 @@ nav{
         border: 1px solid #ffa31a;
         border-radius: 10px;
     }
+    .scroll-to-top-btn {
+        position: fixed;
+        bottom: 7%; /* Adjust as needed */
+        right: 7%; /* Adjust as needed */
+        z-index: 5; /* Ensure it's above other content */
+    }    
     @media only screen and (max-width: 410px)
     {
         .smallScreen .card{
@@ -151,6 +161,10 @@ nav{
         #work{
             margin-top: 1rem;
         }
+    }
+
+    #toTop{
+        display: block;
     }
 }
 
