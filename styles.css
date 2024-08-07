@@ -189,3 +189,7 @@ nav{
 .portFolio a:hover {
     color: orange;
 }
+
+.portFolio.wrapper {
+    margin: 0px auto;
+}
