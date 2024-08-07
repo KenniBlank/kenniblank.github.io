@@ -106,16 +106,8 @@ nav{
     object-fit: cover;
 }
 
-.smallScreen img, .card{
-    border: 1px solid #ffa31a;
-    border-radius: 10px;
-    color: white;
-    background-color: black;
-}
-.smallScreen .card{
-    display: block;
-    width: 90%; 
-    margin: 2rem auto;
+.smallScreen{
+    display: none;
 }
 
 @media only screen and (max-width: 768px)
@@ -131,15 +123,32 @@ nav{
     .socialMedia{
         display: none;
     }
+    .carousel{
+        display: none;
+    }
+    .smallScreen{
+        display: block;
+    }
+    .smallScreen .card{
+        display: block;
+        width: 90%; 
+        margin: 10px auto;
+    }
+    .card{
+        color: white;
+        background-color: black;
+    }
+    
+    .smallScreen img, .card{
+        border: 1px solid #ffa31a;
+        border-radius: 10px;
+    }
     .scroll-to-top-btn {
         position: fixed;
         bottom: 7%; /* Adjust as needed */
         right: 7%; /* Adjust as needed */
         z-index: 5; /* Ensure it's above other content */
     }    
-    .disableOnSmallerDevice{
-        display: none;
-    }
     @media only screen and (max-width: 410px)
     {
         .smallScreen .card{
@@ -185,4 +194,13 @@ nav{
 
 .portFolio a:hover {
     color: orange;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.carousel{
+    max-width: 1366px;
+    margin: auto;
 }
