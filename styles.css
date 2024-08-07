@@ -137,6 +137,9 @@ nav{
         right: 7%; /* Adjust as needed */
         z-index: 5; /* Ensure it's above other content */
     }    
+    .disableOnSmallerDevice{
+        display: none;
+    }
     @media only screen and (max-width: 410px)
     {
         .smallScreen .card{
@@ -182,8 +185,4 @@ nav{
 
 .portFolio a:hover {
     color: orange;
-}
-
-.disableOnSmallerDevice{
-    display: none;
 }
