@@ -107,11 +107,25 @@ nav{
 }
 
 .smallScreen{
-    display: none;
+    display: block;
+}
+.smallScreen .card{
+    display: block;
+    width: 95%; 
+    margin: 2.5% auto;
+    color: whitesmoke;
+    background-color: black;
+}
+.smallScreen img, .card{
+    border: 1px solid #ffa31a;
+    border-radius: 0.5em;
 }
 
 @media only screen and (max-width: 768px)
 {
+    .disableOnSmallerDevice{
+        display: none;
+    }
     .feature-box a
     {
         padding: 5px 8px;
@@ -123,31 +137,11 @@ nav{
     .socialMedia{
         display: none;
     }
-    .carousel{
-        display: none;
-    }
-    .smallScreen{
-        display: block;
-    }
-    .smallScreen .card{
-        display: block;
-        width: 90%; 
-        margin: 10px auto;
-    }
-    .card{
-        color: white;
-        background-color: black;
-    }
-    
-    .smallScreen img, .card{
-        border: 1px solid #ffa31a;
-        border-radius: 10px;
-    }
     .scroll-to-top-btn {
         position: fixed;
-        bottom: 7%; /* Adjust as needed */
-        right: 7%; /* Adjust as needed */
-        z-index: 5; /* Ensure it's above other content */
+        bottom: 7%;
+        right: 7%;
+        z-index: 5;
     }    
     @media only screen and (max-width: 410px)
     {
@@ -194,13 +188,4 @@ nav{
 
 .portFolio a:hover {
     color: orange;
-}
-
-.carousel img{
-    width: 100%;
-}
-
-.carousel{
-    max-width: 1366px;
-    margin: auto;
 }
