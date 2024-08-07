@@ -106,8 +106,16 @@ nav{
     object-fit: cover;
 }
 
-.smallScreen{
-    display: none;
+.smallScreen img, .card{
+    border: 1px solid #ffa31a;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+.smallScreen .card{
+    display: block;
+    width: 90%; 
+    margin: 2rem auto;
 }
 
 @media only screen and (max-width: 768px)
@@ -122,26 +130,6 @@ nav{
     }
     .socialMedia{
         display: none;
-    }
-    .carousel{
-        display: none;
-    }
-    .smallScreen{
-        display: block;
-    }
-    .smallScreen .card{
-        display: block;
-        width: 90%; 
-        margin: 10px auto;
-    }
-    .card{
-        color: white;
-        background-color: black;
-    }
-    
-    .smallScreen img, .card{
-        border: 1px solid #ffa31a;
-        border-radius: 10px;
     }
     .scroll-to-top-btn {
         position: fixed;
@@ -196,11 +184,6 @@ nav{
     color: orange;
 }
 
-.carousel img{
-    width: 100%;
-}
-
-.carousel{
-    max-width: 1366px;
-    margin: auto;
+.disableOnSmallerDevice{
+    display: none;
 }
