@@ -1,122 +1,138 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="description" content="Personal Website">
-        <meta name="keywords" content="Biraj Tiwari, Game Developer, Game Designer, Programmer, Data Scientist">
-        <meta name="author" content="Biraj Tiwari">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
-        <!-- additional scripts for consistency -->
-        <link href = "reset.css" rel="stylesheet">
-        
-        <!-- bootstrap and my css -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link href="styles.css" rel="stylesheet">
-        <script src="index.js"></script>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="Biraj Tiwari, Game Developer, Game Designer, Programmer, Data Scientist">
+    <meta name="author" content="Biraj Tiwari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
-        <!-- Font from google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-        
-        <!-- Favicon -->
-        <link rel="icon" href="img/myFace.png" type="image/icon type">
+    <!-- additional scripts for consistency -->
+    <link href="reset.css" rel="stylesheet">
 
-        <title>AmBiraj</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="about"><img src = "img/myFace.png" id = "faceNavBar">BIRAJ TIWARI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- bootstrap and my css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js"></script>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class = "navbar-nav text-right">
-                        <!-- Home -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="home">HOME</a>
-                        </li>
+    <!-- Font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
-                        <!-- About -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="about">ABOUT</a>
-                        </li>
+    <!-- Favicon -->
+    <link rel="icon" href="img/myFace.png" type="image/icon type">
 
-                        <!-- Portfolio -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PORTFOLIO
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="portfolio#collab">Collab Work</a></li>
-                                <li><a class="dropdown-item" href="portfolio#self">Self Project</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="portfolio#other"">OTHER</a></li>
+    <title>AmBiraj</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="about"><img src="img/myFace.png" id="faceNavBar">BIRAJ TIWARI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-right">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="home">HOME</a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">ABOUT</a>
+                    </li>
+
+                    <!-- Portfolio -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio#collab">Collab Work</a></li>
+                            <li><a class="dropdown-item" href="portfolio#self">Self Project</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="portfolio#other"">OTHER</a></li>
                             </ul>                           
                         </li>
 
                         <!-- Contact -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact">CONTACT</a>
-                        </li>
+                        <li class=" nav-item">
+                                    <a class="nav-link" aria-current="page" href="contact">CONTACT</a>
+                            </li>
 
-                        <!-- Notes -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://birajtiwari.com.np/notes">Notes</a>
-                        </li>
-                    </ul>
-                </div>
+                            <!-- Notes -->
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="https://birajtiwari.com.np/notes">Notes</a>
+                            </li>
+                        </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <main>
-            <div id="collab" style="color: transparent;">Collab Works</div>
-            <div class="container wrapper portFolio">
-                <h4 style="margin-left: auto;"># Collaboration Works:</h4>
-                <h5 style="margin-left: 5%;"> - Nothing to see here T_T</h5>
-                <h6 style="margin-left: 5%;">=> <button type="button" class="btn btn-success"><a href="contact" style="text-shadow: 2px 2px 2px black;">HELP T-T</a></button></h6>
-            </div>
-            <div id="self" style="color: transparent;">Self Works</div>
-            <div class="container wrapper portFolio">
-                <h4># Self Projects:</h4>
-                <h5>
-                    <ul>
-                        <li>- <a href = "https://github.com/KenniBlank/T.A.M-Game-" target="_blank">T.A.M: An Odyssey Through Life</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/BatShooterGame" target="_blank">BatShooter</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/pongInLove2D" target="_blank">Pong</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/TypingTestInC" target="_blank">Typing Test</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/Todo_List" target="_blank">Todo_List</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/kenniblank.github.io" target="_blank">This Website</a></li>
-                        <li>- <a href = "#" target="_blank">TerminalGame (In Progress)</a></li>
-                        <li>- <a href = "https://github.com/KenniBlank/Daily-Quote-Email-Automation" target="_blank">Daily-Quote-Email-Automation</a></li>
-                    </ul>
-                </h5>
-            </div>
-            <div id="other" style="color: transparent;">OtherWorks(Will Add Later On)</div>
-            <div class="container wrapper portFolio">
-                <h4># Other</h4>
-                <h4>
-                    <ul>
-                        <li>* Arts: Coming Soon...</li>
-                        <li>* Blog: Coming Soon...</li>
-                        <li>* Ideas: Coming Soon...</li>
-                        <li>
-                            * Challenges Completed: 
-                            <li><a href = "https://x.com/birajtwr/status/1828038820803305814" target="_blank">---- 60DaysOfLearning2024</a></li>
-                        </li>
-                    </ul>
-                </h4>
-            </div>
-        </main>
-        <button type="button" class="btn btn-light scroll-to-top-btn" id = "toTop" onclick="toTop()">&uarr;</button>
-        <img src="img/background.jpg" class = "background-Img">
-    </body>
+    <main>
+        <div id="collab" style="color: transparent;">Collab Works</div>
+        <div class="container wrapper portFolio">
+            <h4 style="margin-left: auto;"># Collaboration Works:</h4>
+            <h5 style="margin-left: 5%;"> - Nothing to see here T_T</h5>
+            <h6 style="margin-left: 5%;">=> <button type="button" class="btn btn-success"><a href="contact"
+                        style="text-shadow: 2px 2px 2px black;">HELP T-T</a></button></h6>
+        </div>
+        <div id="self" style="color: transparent;">Self Works</div>
+        <div class="container wrapper portFolio">
+            <h4># Self Projects:</h4>
+            <h5>
+                <ul>
+                    <li>- <a href="https://github.com/KenniBlank/T.A.M-Game-" target="_blank">T.A.M: An Odyssey Through
+                            Life</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/BatShooterGame" target="_blank">BatShooter</a></li>
+                    <li>- <a href="https://github.com/argandiagram/ArganDiagram.github.io" target="_blank">Argand
+                            Diagram</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/pongInLove2D" target="_blank">Pong</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/TypingTestInC" target="_blank">Typing Test</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/Todo_List" target="_blank">Todo_List</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/kenniblank.github.io" target="_blank">This Website</a>
+                    </li>
+                    <li>- <a href="#" target="_blank">TerminalGame (In Progress)</a></li>
+                    <li>- <a href="https://github.com/KenniBlank/Daily-Quote-Email-Automation"
+                            target="_blank">Daily-Quote-Email-Automation</a></li>
+                </ul>
+            </h5>
+        </div>
+        <div id="other" style="color: transparent;">OtherWorks(Will Add Later On)</div>
+        <div class="container wrapper portFolio">
+            <h4># Other</h4>
+            <h4>
+                <ul>
+                    <li>* Arts: Coming Soon...</li>
+                    <li>* Blog: Coming Soon...</li>
+                    <li>* Ideas: Coming Soon...</li>
+                    <li>
+                        * Challenges Completed:
+                    <li><a href="https://x.com/birajtwr/status/1828038820803305814" target="_blank">----
+                            60DaysOfLearning2024</a></li>
+                    </li>
+                </ul>
+            </h4>
+        </div>
+    </main>
+    <button type="button" class="btn btn-light scroll-to-top-btn" id="toTop" onclick="toTop()">&uarr;</button>
+    <img src="img/background.jpg" class="background-Img">
+</body>
+
 </html>
